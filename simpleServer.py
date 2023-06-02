@@ -17,7 +17,7 @@ def createServer():
             data = "HTTP/1.1 200 OK\r\n"
             data += "Content-Type: text/html; charset=utf-8\r\n"
             data += "\r\n"
-            data += "<html><body>Hello World</body></html>\r\n\r\n"
+            data += "<html><h1>Hello World</h1>\n<body>This is my test page<body></html>\r\n\r\n"
             clientsocket.sendall(data.encode())                             # encode before send
             clientsocket.shutdown(SHUT_WR)                                  # close the connection
 
